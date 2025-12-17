@@ -1,59 +1,130 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Suporte técnico remoto e presencial em BH. Formatação, otimização, rede e manutenção.">
-    <title>Suporte Técnico — WarNat Tech</title>
-    <link rel="stylesheet" href="/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suporte Técnico TI em Belo Horizonte | WarNat Tech</title>
+  <meta name="description" content="Suporte técnico remoto e presencial em BH: otimização, formatação, remoção de vírus e manutenção de computadores. Orçamento grátis para suporte TI MG.">
+  <meta name="keywords" content="suporte técnico Belo Horizonte, manutenção computadores BH, suporte TI MG, formatação Windows, remoção vírus, otimização PC, diagnóstico hardware">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Suporte Técnico em Belo Horizonte - WarNat Tech">
+  <meta property="og:description" content="Atendimento rápido para problemas de TI: remoto ou presencial em BH.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1516542076529-575cae9c3465">
+  <meta property="og:url" content="https://off-warnattech-site.pages.dev/suporte.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://off-warnattech-site.pages.dev/suporte.html">
+  <link rel="icon" href="banner.jpg?w=64" type="image/jpeg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Suporte Técnico TI",
+    "provider": {
+      "@type": "Organization",
+      "name": "WarNat Tech",
+      "url": "https://off-warnattech-site.pages.dev"
+    },
+    "areaServed": "Belo Horizonte, MG",
+    "description": "Suporte remoto e presencial para computadores e redes em BH."
+  }
+  </script>
 </head>
-<body>
-    <header>
-        <a href="/" style="text-decoration: none; color: white;">
-            <h1>WarNat Tech</h1>
-        </a>
-        <p>Segurança, Redes e TI de Alto Nível</p>
-        <nav>
-            <ul>
-                <li><a href="/">Início</a></li>
-                <li><a href="/cftv.html">CFTV</a></li>
-                <li><a href="/redes.html">Redes</a></li>
-                <li><a href="/servidores.html">Servidores</a></li>
-                <li><a href="/suporte.html">Suporte</a></li>
-                <li><a href="/montagem.html">Montagem de PCs</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="font-sans text-gray-800 antialiased" x-data="{ active: 0 }">
+  <!-- Navbar -->
+  <nav class="bg-blue-900 text-white fixed top-0 w-full z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="/" class="text-2xl font-bold">WarNat Tech</a>
+      <div class="flex gap-6 text-sm">
+        <a href="/" class="hover:text-orange-400">Home</a>
+        <a href="cftv.html" class="hover:text-orange-400">CFTV</a>
+        <a href="redes.html" class="hover:text-orange-400">Redes</a>
+        <a href="servidores.html" class="hover:text-orange-400">Servidores</a>
+        <a href="suporte.html" class="hover:text-orange-400">Suporte</a>
+        <a href="montagem.html" class="hover:text-orange-400">Montagem de PCs</a>
+        <a href="sobre.html" class="hover:text-orange-400">Sobre</a>
+      </div>
+    </div>
+  </nav>
 
-    <main>
-        <img src="https://images.unsplash.com/photo-1516542076529-575cae9c3465?auto=format&fit=crop&w=1920&q=80" 
-             alt="Técnico prestando suporte técnico em computador" 
-             class="service-image" loading="lazy">
+  <!-- Hero -->
+  <section class="bg-blue-900 text-white pt-20 pb-16 text-center bg-cover" style="background-image: url('https://images.unsplash.com/photo-1516542076529-575cae9c3465');" aria-label="Suporte Técnico em Belo Horizonte">
+    <div class="bg-blue-900/70 py-16">
+      <h1 class="text-4xl font-bold mb-6">Suporte Técnico TI em Belo Horizonte</h1>
+      <p class="text-xl mb-8">Atendimento remoto e presencial para otimização e manutenção de computadores</p>
+    </div>
+  </section>
 
-        <h2>Suporte Técnico Remoto e Presencial</h2>
-        <p>Diagnóstico rápido, manutenção, otimização e solução de problemas.</p>
+  <!-- Conteúdo Principal -->
+  <section class="py-20 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12 text-blue-900">Serviços de Suporte Técnico em BH</h2>
+      <p class="text-lg mb-6">Resolvemos problemas de TI rapidamente, com diagnóstico completo e soluções personalizadas para empresas e residências em MG.</p>
+      <h3 class="text-2xl font-bold mb-4 text-orange-600">O que Podemos Resolver</h3>
+      <ul class="grid md:grid-cols-2 gap-4 list-none">
+        <li class="bg-white p-4 rounded shadow"><i class="fas fa-stethoscope mr-2 text-orange-500"></i>Diagnóstico Completo de Hardware e Software</li>
+        <li class="bg-white p-4 rounded shadow"><i class="fas fa-broom mr-2 text-orange-500"></i>Otimização e Limpeza (Remoção de Vírus)</li>
+        <li class="bg-white p-4 rounded shadow"><i class="fas fa-redo mr-2 text-orange-500"></i>Formatação Windows com Backup</li>
+        <li class="bg-white p-4 rounded shadow"><i class="fas fa-memory mr-2 text-orange-500"></i>Testes de Memória, SSD/HD e Componentes</li>
+        <li class="bg-white p-4 rounded shadow"><i class="fas fa-wifi mr-2 text-orange-500"></i>Correção Problemas de Rede</li>
+        <li class="bg-white p-4 rounded shadow"><i class="fas fa-tools mr-2 text-orange-500"></i>Manutenção Preventiva e Pasta Térmica</li>
+        <li class="bg-white p-4 rounded shadow"><i class="fas fa-key mr-2 text-orange-500"></i>Recuperação de Senhas</li>
+        <li class="bg-white p-4 rounded shadow"><i class="fas fa-desktop mr-2 text-orange-500"></i>Suporte Remoto via AnyDesk</li>
+      </ul>
+      <div class="text-center mt-12">
+        <a href="https://wa.me/5531983525816?text=Olá! Preciso de suporte técnico em Belo Horizonte" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-12 rounded text-xl shadow-lg">Solicitar Suporte</a>
+      </div>
+    </div>
+  </section>
 
-        <h2>Serviços de Suporte Técnico</h2>
-        <p>Atendimento imediato remoto ou presencial – resolvemos seu problema hoje mesmo.</p>
+  <!-- Galeria -->
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12 text-blue-900">Galeria de Suporte Técnico em BH</h2>
+      <p class="text-center mb-8">Exemplos de manutenções e tutoriais para resolver problemas comuns de TI.</p>
+      <div class="relative">
+        <div class="overflow-hidden rounded-lg">
+          <div x-show="active === 0" class="w-full">
+            <img src="https://unsplash.com/photos/person-using-macbook-pro-on-table-414429/download?force=true" alt="Manutenção Computadores BH" class="w-full h-64 object-cover" loading="lazy">
+            <p class="text-center mt-2">Diagnóstico de Hardware</p>
+          </div>
+          <div x-show="active === 1" class="w-full">
+            <iframe src="https://www.youtube.com/embed/9U9ZFcLuGLM" class="w-full h-64" frameborder="0" allowfullscreen></iframe>
+            <p class="text-center mt-2">Tutorial Remoção de Vírus</p>
+          </div>
+          <!-- Adicione mais itens -->
+        </div>
+        <button @click="active = (active > 0) ? active - 1 : 1" class="absolute left-0 top-1/2 bg-orange-500 text-white p-2 rounded-r">‹</button>
+        <button @click="active = (active < 1) ? active + 1 : 0" class="absolute right-0 top-1/2 bg-orange-500 text-white p-2 rounded-l">›</button>
+      </div>
+    </div>
+  </section>
 
-        <h2>O que podemos resolver</h2>
-        <ul style="list-style: none; padding-left: 0;">
-            <li>Diagnóstico Completo de hardware e software</li>
-            <li>Otimização e limpeza (remoção de vírus, ganho de desempenho)</li>
-            <li>Formatação e reinstalação do Windows com backup de dados</li>
-            <li>Testes de memória, SSD/HD, placa-mãe, fonte</li>
-            <li>Correção de problemas de rede e internet</li>
-            <li>Manutenção preventiva e troca de pasta térmica</li>
-            <li>Recuperação de senhas e permissões</li>
-            <li>Suporte remoto imediato via AnyDesk/TeamViewer</li>
-        </ul>
-    </main>
+  <!-- Contato -->
+  <section id="contato" class="py-20 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-8 text-blue-900">Fale Conosco sobre Suporte</h2>
+      <form action="https://formspree.io/f/seu-email" method="POST" class="max-w-md mx-auto">
+        <input type="text" name="nome" placeholder="Nome" class="w-full mb-4 p-2 rounded" required>
+        <input type="email" name="email" placeholder="Email" class="w-full mb-4 p-2 rounded" required>
+        <textarea name="mensagem" placeholder="Descreva seu problema" class="w-full mb-4 p-2 rounded" rows="4" required></textarea>
+        <button type="submit" class="bg-orange-500 text-white py-2 px-6 rounded">Enviar</button>
+      </form>
+    </div>
+  </section>
 
-    <footer>
-        <p>© 2025 WarNat Tech - Todos os direitos reservados</p>
-        <p>Contato WhatsApp: <a href="https://wa.me/5531983525816?text=Olá! Vim pelo site da WarNat Tech, preciso de suporte técnico.">(31) 98352-5816</a></p>
-    </footer>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p>© 2025 WarNat Tech. Todos os direitos reservados.</p>
+      <p>Contato WhatsApp: <a href="https://wa.me/5531983525816?text=Olá! Preciso de suporte técnico em BH" class="text-orange-400">(31) 98352-5816</a></p>
+    </div>
+  </footer>
 
-    <a href="https://wa.me/5531983525816?text=Olá! Vim pelo site da WarNat Tech, preciso de suporte técnico." class="whatsapp-fixo" target="_blank">💬</a>
+  <!-- WhatsApp Fixo -->
+  <a href="https://wa.me/5531983525816?text=Olá! Preciso de suporte técnico em BH" class="fixed bottom-4 right-4 bg-orange-500 text-white p-4 rounded-full shadow-lg" aria-label="WhatsApp"><i class="fab fa-whatsapp text-2xl"></i></a>
 </body>
 </html>
