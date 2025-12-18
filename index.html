@@ -23,7 +23,6 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 </head>
 
 <body class="font-sans text-gray-800 antialiased">
@@ -33,7 +32,6 @@
       <a href="#" class="text-2xl font-bold">WarNat Tech</a>
       <div class="flex gap-6 text-sm">
         <a href="#servicos" class="hover:text-orange-400">Serviços</a>
-        <a href="#galeria" class="hover:text-orange-400">Galeria</a>
         <a href="#sobre" class="hover:text-orange-400">Sobre</a>
         <a href="#depoimentos" class="hover:text-orange-400">Depoimentos</a>
         <a href="#contato" class="hover:text-orange-400">Contato</a>
@@ -41,7 +39,7 @@
     </div>
   </nav>
 
-  <!-- Hero com foco maior em CFTV (mantida a imagem banner.jpg) -->
+  <!-- Hero com foco maior em CFTV -->
   <section class="bg-blue-900 text-white pt-20 pb-16 text-center bg-cover bg-center bg-no-repeat" style="background-image: url('banner.jpg');" aria-label="Câmera de segurança monitorando condomínio com piscina e casas modernas">
     <div class="bg-blue-900/70 py-16">
       <div class="max-w-5xl mx-auto px-4">
@@ -63,7 +61,7 @@
     </div>
   </section>
 
-  <!-- Benefícios rápidos -->
+  <!-- Benefícios rápidos com foco inicial em CFTV -->
   <section class="bg-gray-100 py-16">
     <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
       <div class="bg-white p-8 rounded-lg shadow">
@@ -84,57 +82,132 @@
     </div>
   </section>
 
-  <!-- Serviços detalhados (mantidos) -->
+  <!-- Serviços detalhados, com CFTV em destaque primeiro -->
   <section id="servicos" class="py-20">
-    <!-- ... (conteúdo de serviços igual ao anterior) ... -->
-  </section>
-
-  <!-- NOVA GALERIA DE FOTOS -->
-  <section id="galeria" class="py-20 bg-gray-100">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center mb-12 text-blue-900">Galeria de Projetos Realizados</h2>
-      <p class="text-center text-lg mb-12">Confira exemplos de instalações de CFTV, redes, servidores, suporte e montagem de PCs em Belo Horizonte e região.</p>
-
-      <div x-data="{ active: 0 }" class="relative">
-        <div class="overflow-hidden rounded-lg shadow-2xl">
-          <!-- Imagens do Carousel (20 itens) -->
-          <div x-show="active === 0" class="w-full"><img src="https://www.cftv.tv.br/wp-content/uploads/2014/05/camera-de-seguranca1.png" alt="Instalação profissional de câmeras CFTV em residência Belo Horizonte" class="w-full h-96 object-cover" loading="lazy"><p class="text-center py-2 bg-white">CFTV Residencial</p></div>
-          <div x-show="active === 1" class="w-full"><img src="https://lopesengenhariamg.com.br/wp-content/uploads/elementor/thumbs/instala%C3%A7%C3%A3o-de-c%C3%A2meras-de-seguran%C3%A7a-CFTV-circuito-fechado-de-TV-monitoramento-onz2vy35dvqwp2wbq94wrl4waiovq97sfz1oojo650.jpg" alt="Instalação CFTV comercial em BH" class="w-full h-96 object-cover" loading="lazy"><p class="text-center py-2 bg-white">CFTV Comercial</p></div>
-          <div x-show="active === 2" class="w-full"><img src="https://www.tecinfoservicos.com.br/imagens/informacoes/valor-instalacao-cftv-01.webp" alt="Projeto CFTV com câmeras Hikvision Belo Horizonte" class="w-full h-96 object-cover" loading="lazy"><p class="text-center py-2 bg-white">Projeto CFTV Hikvision</p></div>
-          <div x-show="active === 3" class="w-full"><img src="https://www.yescftv.com.br/BLOG%20-%20POSTAGENS/05-05-2025%20Melhores%20Locais%20para%20Instalar%20C%C3%A2meras%20em%20Resid%C3%AAncia/Capa-Artigo-no-Blog.png" alt="Melhores posições para câmeras de segurança residência" class="w-full h-96 object-cover" loading="lazy"><p class="text-center py-2 bg-white">Posicionamento Ideal CFTV</p></div>
-          <div x-show="active === 4" class="w-full"><img src="https://www.moduloseguranca.com.br/imagens/informacoes/instalacao-cameras-monitoramento-01.webp" alt="Instalação câmeras monitoramento externo BH" class="w-full h-96 object-cover" loading="lazy"><p class="text-center py-2 bg-white">Monitoramento Externo</p></div>
-          <div x-show="active === 5" class="w-full"><img src="https://www.grupomcv.com.br/images/instalacao-de-cameras-residencial-02.webp" alt="Instalação câmeras residencial Grupo MCV estilo" class="w-full h-96 object-cover" loading="lazy"><p class="text-center py-2 bg-white">CFTV Residencial Premium</p></div>
-          <div x-show="active === 6" class="w-full"><img src="https://i.redd.it/new-ubiquiti-proav-switches-at-cedia-v0-978tlj56w5nf1.jpg?width=5712&format=pjpg&auto=webp&s=555d4d00c32fd78e2c908192a4885ac02ed59afc" alt="Switches Ubiquiti ProAV infraestrutura redes" class="w-full h-96 object-cover" loading="lazy"><p class="text-center py-2 bg-white">Switches Ubiquiti</p></div>
-          <div x-show="active === 7" class="w-full"><img src="https://logintecnologia.com.br/wp-content/uploads/2023/10/gerenciamento-de-rede-araruama.jpg" alt="Cabeamento estruturado e gerenciamento rede" class="w-full h-96 object-cover" loading="lazy"><p class="text-center py-2 bg-white">Cabeamento Estruturado</p></div>
-          <div x-show="active === 8" class="w-full"><img src="https://i.redd.it/gclyhj2nlxh41.jpg" alt="Rack rede doméstica UniFi completo" class="w-full h-96 object-cover" loading="lazy"><p class="text-center py-2 bg-white">Rack UniFi</p></div>
-          <div x-show="active === 9" class="w-full"><img src="https://miro.medium.com/v2/resize:fit:1400/1*kRv-kKWlDl1MOuLvxpp1cQ.png" alt="Switches UniFi segunda geração LAN" class="w-full h-96 object-cover" loading="lazy"><p class="text-center py-2 bg-white">Switches UniFi G2</p></div>
-          <div x-show="active === 10" class="w-full"><img src="https://licendi.com/media/wysiwyg/Configurar_servidor_de_archivos_Windows_Server_2019.jpg" alt="Configuração Windows Server 2019 file server" class="w-full h-96 object-cover" loading="lazy"><p class="text-center py-2 bg-white">Windows Server Configurado</p></div>
-          <div x-show="active === 11" class="w-full"><img src="https://datacenters.microsoft.com/tour/assets/images/meta/server.jpg" alt="Sala de servidores data center profissional" class="w-full h-96 object-cover" loading="lazy"><p class="text-center py-2 bg-white">Rack Servidores</p></div>
-          <div x-show="active === 12" class="w-full"><img src="http://www.eabel.com/wp-content/uploads/2024/07/Advanced-server-racks-in-a-high-tech-data-center.webp" alt="Racks avançados data center high-tech" class="w-full h-96 object-cover" loading="lazy"><p class="text-center py-2 bg-white">Data Center Moderno</p></div>
-          <div x-show="active === 13" class="w-full"><img src="https://www.meupositivo.com.br/panoramapositivo/wp-content/uploads/2019/08/original-ff03ea492dd23f21a15ff4716956514d.jpg" alt="Técnico suporte TI presencial empresa" class="w-full h-96 object-cover" loading="lazy"><p class="text-center py-2 bg-white">Suporte Presencial</p></div>
-          <div x-show="active === 14" class="w-full"><img src="https://smartsystemit.com.br/site/catalogo/10/mini_1-suporte_tecnico_de_informatica.jpg" alt="Manutenção informática suporte técnico" class="w-full h-96 object-cover" loading="lazy"><p class="text-center py-2 bg-white">Manutenção TI</p></div>
-          <div x-show="active === 15" class="w-full"><img src="https://www.w2z.com.br/wp-content/uploads/2020/07/support-1024x682-1.jpg" alt="Equipe suporte técnico TI remoto" class="w-full h-96 object-cover" loading="lazy"><p class="text-center py-2 bg-white">Suporte Remoto</p></div>
-          <div x-show="active === 16" class="w-full"><img src="https://s2-techtudo.glbimg.com/febVoFV0tNPwK34a3m1xe-u_2p0=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2024/w/c/VpoxDXQwCh35rNAyBdxA/99742.jpg" alt="Setup PC gamer completo RGB" class="w-full h-96 object-cover" loading="lazy"><p class="text-center py-2 bg-white">PC Gamer RGB</p></div>
-          <div x-show="active === 17" class="w-full"><img src="https://microsantos.com.br/wp-content/uploads/2025/09/como-montar-pc-gamer-scaled.jpg" alt="Montagem PC gamer profissional" class="w-full h-96 object-cover" loading="lazy"><p class="text-center py-2 bg-white">Montagem Personalizada</p></div>
-          <div x-show="active === 18" class="w-full"><img src="https://i.ytimg.com/vi/v0pCCl1Sd4I/maxresdefault.jpg" alt="Gabinete Lian Li com fans RGB setup 2024" class="w-full h-96 object-cover" loading="lazy"><p class="text-center py-2 bg-white">Setup Lian Li RGB</p></div>
-          <div x-show="active === 19" class="w-full"><img src="https://pcgamerz.co.uk/wp-content/uploads/2025/10/pc-gamer-completo.jpeg" alt="PC gamer completo full setup" class="w-full h-96 object-cover" loading="lazy"><p class="text-center py-2 bg-white">Full Setup Gamer</p></div>
+      <h2 class="text-4xl font-bold text-center mb-12">Nossos Serviços</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold text-orange-600 mb-4">Venda + Instalação de CFTV</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Câmeras 4K/8MP Hikvision, Intelbras, Dahua</li>
+            <li>Instalação completa com cabeamento estruturado</li>
+            <li>DVR/NVR híbrido, acesso remoto via app</li>
+            <li>Projetos para residências, comércios e indústrias</li>
+          </ul>
         </div>
-
-        <!-- Controles -->
-        <button @click="active = (active > 0) ? active - 1 : 19" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-orange-500 text-white p-3 rounded-full shadow-lg hover:bg-orange-600"><i class="fas fa-chevron-left text-2xl"></i></button>
-        <button @click="active = (active < 19) ? active + 1 : 0" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-orange-500 text-white p-3 rounded-full shadow-lg hover:bg-orange-600"><i class="fas fa-chevron-right text-2xl"></i></button>
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold text-orange-600 mb-4">Infraestrutura de Redes</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Planejamento e implantação LAN/Wi-Fi enterprise</li>
+            <li>Configuração de roteadores, switches, firewalls</li>
+            <li>Ubiquiti UniFi, Mikrotik, TP-Link Omada</li>
+            <li>Redes mesh, VLANs, QoS, VPN site-to-site</li>
+          </ul>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold text-orange-600 mb-4">Servidores & Virtualização</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Instalação Windows Server 2019/2022</li>
+            <li>Active Directory, pastas compartilhadas, permissões</li>
+            <li>Hyper-V ou VMware ESXi</li>
+            <li>Rotinas de backup automatizado (Veeam, Synology)</li>
+          </ul>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold text-orange-600 mb-4">Suporte Remoto & Presencial</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Diagnóstico rápido via AnyDesk/TeamViewer</li>
+            <li>Manutenção preventiva e corretiva</li>
+            <li>Remoção de vírus, otimização, upgrade</li>
+            <li>Atendimento 24h em casos críticos</li>
+          </ul>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold text-orange-600 mb-4">Montagem e Upgrade de PCs</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>PCs gamer sob medida (melhor custo x desempenho)</li>
+            <li>Montagem corporativa (estações de trabalho)</li>
+            <li>Limpeza, troca de pasta térmica, SSD, RAM</li>
+            <li>Garantia de 1 ano na montagem</li>
+          </ul>
+        </div>
       </div>
-
-      <div class="text-center mt-12">
-        <a href="https://wa.me/5531983525816?text=Olá! Vi a galeria e quero um orçamento similar" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-12 rounded text-xl shadow-lg">
-          SOLICITAR ORÇAMENTO PERSONALIZADO
+      
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
+        <a href="https://wa.me/5531983525816?text=Olá! Quero um orçamento de CFTV/redes" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-10 rounded text-xl shadow-lg transform hover:scale-105 transition">
+          <i class="fab fa-whatsapp mr-2"></i> SOLICITAR ORÇAMENTO SEM COMPROMISSO
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Depoimentos, Sobre, Contato e Footer (mantidos como antes) -->
-  <!-- ... (cole o conteúdo das seções anteriores aqui) ... -->
+  <!-- Depoimentos -->
+  <section id="depoimentos" class="bg-gray-100 py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12">O que nossos clientes dizem</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded shadow">
+          <p class="italic mb-4">"Instalaram 16 câmeras na minha loja em 1 dia. Imagem perfeita e acesso pelo celular. Recomendo!"</p>
+          <p class="text-right font-semibold">- Marcelo S., Loja de Conveniência</p>
+        </div>
+        <div class="bg-white p-8 rounded shadow">
+          <p class="italic mb-4">"Resolveram o problema de internet lenta na empresa inteira. Agora temos Wi-Fi rápido em todos os andares."</p>
+          <p class="text-right font-semibold">- Renata C., Escritório de Advocacia</p>
+        </div>
+        <div class="bg-white p-8 rounded shadow">
+          <p class="italic mb-4">"Montaram meu PC gamer Ryzen 7 + RTX 4070 por preço imbatível. Está voando!"</p>
+          <p class="text-right font-semibold">- Lucas M., Gamer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Sobre -->
+  <section id="sobre" class="py-20 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12 text-blue-900">Nossa História e Missão</h2>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div>
+          <p class="text-lg mb-6">Fundada em 2015, a WarNat Tech surgiu da paixão por tecnologia e segurança. Começamos como uma pequena equipe de especialistas em TI em Belo Horizonte, e hoje somos referência em soluções integradas de CFTV, infraestrutura de redes, servidores e suporte técnico.</p>
+          <p class="text-lg mb-6">Nossa missão é proporcionar tranquilidade e eficiência para residências e empresas, utilizando as mais avançadas tecnologias como Hikvision, Ubiquiti e VMware. Com foco no cliente, entregamos projetos personalizados que otimizam custo e desempenho.</p>
+          <p class="text-lg">Atendemos mais de 500 clientes satisfeitos na Grande BH, com suporte 24h e garantia em todos os serviços.</p>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold text-orange-600 mb-4">Nossos Valores</h3>
+          <ul class="list-disc list-inside space-y-2 text-lg">
+            <li>Inovação: Sempre atualizados com as últimas tecnologias.</li>
+            <li>Confiança: Transparência e qualidade em cada projeto.</li>
+            <li>Excelência: Equipe certificada e experiente.</li>
+            <li>Compromisso: Suporte rápido e soluções duradouras.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="py-20 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-8 text-blue-900">Entre em Contato</h2>
+      <form action="https://formspree.io/f/seu-email" method="POST" class="max-w-md mx-auto">
+        <input type="text" name="nome" placeholder="Nome" class="w-full mb-4 p-2 rounded" required>
+        <input type="email" name="email" placeholder="Email" class="w-full mb-4 p-2 rounded" required>
+        <textarea name="mensagem" placeholder="Mensagem" class="w-full mb-4 p-2 rounded" rows="4" required></textarea>
+        <button type="submit" class="bg-orange-500 text-white py-2 px-6 rounded">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p class="text-2xl font-bold mb-4">WarNat Tech</p>
+      <p>CNPJ 99.999.999/0001-99 • Belo Horizonte - MG</p>
+      <p class="mt-4">(31) 98352-5816 • contato@warnattech.com.br</p>
+      <p class="mt-8 text-sm">© 2025 WarNat Tech. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
   <!-- WhatsApp Fixo -->
   <a href="https://wa.me/5531983525816?text=Olá! Quero saber mais sobre CFTV em Belo Horizonte" class="fixed bottom-4 right-4 bg-orange-500 text-white p-4 rounded-full shadow-lg hover:bg-orange-600" aria-label="Contato WhatsApp"><i class="fab fa-whatsapp text-2xl"></i></a>
