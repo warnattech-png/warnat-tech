@@ -6,12 +6,15 @@ keywords: CFTV Belo Horizonte, instalação câmeras segurança, Hikvision BH, I
 
 # WarNat Tech | CFTV Profissional, Redes, Servidores e Suporte em Belo Horizonte
 
+**Menu de Navegação:**  
+[Início](#warnat-tech) | [Serviços](#nossos-serviços) | [Sobre](#nossa-história-e-missão) | [Blog](/blog/) | [Contato](#entre-em-contato)
+
 ## Proteção Inteligente para Sua Casa ou Empresa
 
 Especialistas em CFTV, Redes, Servidores e Suporte Técnico na Grande BH
 
 **Orçamento Grátis + Até 10% Off na Instalação de CFTV**  
-*(Válido para instalação completa até 31/01/2026 – Consulte condições)*
+*(Válido para instalação completa – Consulte condições)*<grok:render card_id="0c795b,713bce" card_type="image_card_group" type="render_card"></grok:render>
 
 ### CFTV 4K/8MP
 Câmeras Hikvision/Dahua/Intelbras com visão noturna colorida e app mobile
@@ -71,7 +74,7 @@ Gamer ou corporativo com o melhor custo-benefício
 
 Fundada em 2015, a WarNat Tech surgiu da paixão por tecnologia e segurança. Começamos como uma pequena equipe de especialistas em TI em Belo Horizonte e hoje somos referência em soluções integradas de CFTV, infraestrutura de redes, servidores e suporte técnico.
 
-Nossa missão é proporcionar tranquilidade e eficiência para residências e empresas, utilizando as mais avançadas tecnologias como Hikvision, Ubiquiti e VMware. Com foco no cliente, entregamos projetos personalizados que otimizam custo e desempenho. Já atendemos mais de 500 clientes satisfeitos na Grande BH, com suporte 24h e garantia em todos os serviços.
+Nossa missão é proporcionar tranquilidade e eficiência para residências e empresas, utilizando as mais avançadas tecnologias como Hikvision, Ubiquiti e VMware. Já atendemos mais de 500 clientes satisfeitos na Grande BH, com suporte 24h e garantia em todos os serviços.
 
 ## Nossos Valores
 - **Inovação**: Sempre atualizados com as últimas tecnologias.
@@ -79,17 +82,28 @@ Nossa missão é proporcionar tranquilidade e eficiência para residências e em
 - **Excelência**: Equipe certificada e experiente.
 - **Compromisso**: Suporte rápido e soluções duradouras.
 
-## Certificações e Parcerias<grok:render card_id="4b84d8,f2a566,1280fd" card_type="image_card_group" type="render_card"></grok:render>
+## Certificações e Parcerias<grok:render card_id="f33e41,8cf89b,225e06" card_type="image_card_group" type="render_card"></grok:render>
 
 **Parceiros Certificados Hikvision, Intelbras e Ubiquiti.**  
 Equipe treinada e certificada nas principais tecnologias do mercado, garantindo instalações profissionais e suporte qualificado.
 
 ## Blog: Dicas de Segurança e Tecnologia
 
-- [Como escolher a câmera ideal para sua casa ou empresa](https://warnat-tech.pages.dev/blog/como-escolher-camera)
-- [Benefícios do CFTV em 4K e 8MP](https://warnat-tech.pages.dev/blog/beneficios-cftv-4k)
-- [Dicas para uma rede Wi-Fi segura, rápida e estável](https://warnat-tech.pages.dev/blog/rede-wifi-segura)
-- [Manutenção preventiva: evite problemas no seu servidor](https://warnat-tech.pages.dev/blog/manutencao-servidor)
+Confira nossos artigos mais recentes com dicas práticas. Clique no título para ler completo!
+
+### [Como Escolher a Câmera de Segurança Ideal para Sua Casa ou Empresa](/blog/como-escolher-camera.md)
+Guia completo com dicas sobre resolução 4K, visão noturna e marcas confiáveis como Hikvision e Intelbras.<grok:render card_id="61369e" card_type="image_card" type="render_searched_image"><argument name="image_id">10</argument><argument name="size">"LARGE"</argument></grok:render>
+
+### [Benefícios do CFTV em 4K e 8MP: Por Que Vale o Investimento?](/blog/beneficios-cftv-4k.md)
+Descubra por que imagens ultra nítidas e zoom digital estão revolucionando a segurança.<grok:render card_id="807e7d" card_type="image_card" type="render_searched_image"><argument name="image_id">11</argument><argument name="size">"LARGE"</argument></grok:render>
+
+### [7 Dicas para uma Rede Wi-Fi Segura, Rápida e Estável](/blog/rede-wifi-segura.md)
+Aprenda a configurar Wi-Fi profissional com Ubiquiti UniFi e evite lentidão ou invasões.<grok:render card_id="5b2963" card_type="image_card" type="render_searched_image"><argument name="image_id">15</argument><argument name="size">"LARGE"</argument></grok:render>
+
+### [Manutenção Preventiva de Servidores: Evite Perdas Caras](/blog/manutencao-servidor.md)
+Checklist completo para backups, atualizações e monitoramento de hardware.<grok:render card_id="0dc13d" card_type="image_card" type="render_searched_image"><argument name="image_id">8</argument><argument name="size">"LARGE"</argument></grok:render>
+
+[Ver todos os artigos no Blog](/blog/)
 
 ## Entre em Contato
 
